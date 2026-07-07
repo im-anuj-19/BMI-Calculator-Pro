@@ -1,0 +1,3 @@
+# BMI Calculator Pro v1.0
+# This project uses only Python standard library modules.
+# No external packages are required.
