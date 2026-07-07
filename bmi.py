@@ -1,11 +1,3 @@
-"""
-bmi.py
-BMI Calculator Pro v1.0
-
-Contains all BMI-related calculations and health advice.
-"""
-
-
 def calculate_bmi(weight, height):
     """
     Calculate BMI using metric units.
