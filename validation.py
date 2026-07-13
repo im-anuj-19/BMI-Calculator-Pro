@@ -1,26 +1,6 @@
-"""
-validation.py
-BMI Calculator Pro v1.0
-
-Contains all input validation functions.
-"""
-
-
 def validate_inputs(weight, height):
-    """
-    Validate weight and height entered by the user.
-
-    Args:
-        weight (float): Weight in kilograms
-        height (float): Height in meters
-
-    Returns:
-        tuple:
-            (True, "") if valid
-            (False, error_message) if invalid
-    """
-
-    # Weight validation
+   
+     # Weight validation
     if weight <= 0:
         return False, "Weight must be greater than 0."
 
@@ -44,16 +24,7 @@ def validate_inputs(weight, height):
 
 
 def is_number(value):
-    """
-    Check whether a string can be converted to float.
-
-    Args:
-        value (str)
-
-    Returns:
-        bool
-    """
-
+  
     try:
         float(value)
         return True
