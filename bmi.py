@@ -1,34 +1,11 @@
 def calculate_bmi(weight, height):
-    """
-    Calculate BMI using metric units.
-
-    Formula:
-        BMI = weight / (height^2)
-
-    Args:
-        weight (float): Weight in kilograms
-        height (float): Height in meters
-
-    Returns:
-        float: BMI rounded to 2 decimal places
-    """
-
+ 
     bmi = weight / (height ** 2)
     return round(bmi, 2)
 
 
 def get_bmi_category(bmi):
-    """
-    Determine BMI category and provide health advice.
-
-    Args:
-        bmi (float)
-
-    Returns:
-        tuple:
-            (category, advice)
-    """
-
+   
     if bmi < 18.5:
         return (
             "Underweight",
@@ -71,20 +48,7 @@ def get_bmi_category(bmi):
 
 
 def healthy_weight_range(height):
-    """
-    Calculate healthy weight range based on BMI.
-
-    Healthy BMI:
-        18.5 - 24.9
-
-    Args:
-        height (float): Height in meters
-
-    Returns:
-        tuple:
-            (minimum_weight, maximum_weight)
-    """
-
+   
     minimum = round(18.5 * height * height, 1)
     maximum = round(24.9 * height * height, 1)
 
